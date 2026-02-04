@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <title>Urban Nashik Properties</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="nav-left" id="openMenu">☰</div>
+    <!-- Sidebar Overlay -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- Sidebar Menu -->
+<div class="sidebar" id="sidebarMenu">
+
+  <div class="sidebar-header">
+    <div class="close-btn" id="closeMenu">✖</div>
+  </div>
+
+  <div class="sidebar-logo">
+    <img src="images/logo.png" alt="Urban Logo">
+  </div>
+
+  <div class="sidebar-links">
+    <a href="#row">Row-Houses</a>
+    <a href="#flats">Flats</a>
+    <a href="#plots">Plots</a>
+    <a href="#shops">Commercial Shops</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+<!-- Sidebar Social Icons -->
+<div class="sidebar-icons">
+  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+</div>
+  </div>
+
+
+
+
+</div>
+
+
+    <!--<div class="nav-center">
+        <img src="images/logo.png" alt="Urban Logo">
+    </div> -->
+
+   <nav class="nav-right">
+  <a href="#">Offers</a>
+  <div class="dropdown">
+  <button class="drop-btn" id="projectsBtn" type="button">
+    Our Projects ▾
+  </button>
+
+  <div class="dropdown-menu" id="projectsMenu">
+    <a href="#row">Row-Houses</a>
+    <a href="#flats">Flats</a>
+    <a href="#plots">Plots</a>
+    <a href="#shops">Commercial Shops</a>
+  </div>
+</div>
+
+  <a href="contact.html">Contact Us</a>
+
+  <!-- Search Button -->
+  <button class="search-btn" id="openSearch" type="button" aria-label="Search">
+  <svg class="search-icon" viewBox="0 0 24 24" fill="none">
+    <circle cx="11" cy="11" r="7" stroke="white" stroke-width="2"></circle>
+    <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="white" stroke-width="2" stroke-linecap="round"></line>
+  </svg>
+</button>
+</nav>
+
+<!-- Search Popup -->
+<div class="search-popup" id="searchPopup">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search projects..." />
+    <button id="searchNow" type="button">Search</button>
+    <button id="closeSearch" type="button">✖</button>
+  </div>
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-overlay">
+         <img src="images/logo.png" alt="Urban Logo" class="hero-logo">
+       <h1 class="hero-text">
+  आपल्या हक्काची प्रॉपर्टी मिळवून देणे हाच आमचे काम....!
+</h1>
+
+    </div>
+</section>
+
+<!-- ================= AVAILABLE PROJECTS ================= -->
+<section class="projects-section">
+  <h2 class="section-title">Available Projects</h2>
+
+  <!-- Tabs -->
+  <div class="project-tabs">
+    <button class="tab-btn active" data-tab="row">Row-Houses</button>
+    <button class="tab-btn" data-tab="flats">Flats</button>
+    <button class="tab-btn" data-tab="plots">Plots</button>
+    <button class="tab-btn" data-tab="shops">Commercial Shops</button>
+  </div>
+
+  <!-- ================= Row Houses (YOUR CODE) ================= -->
+  <div class="project-cards tab-content active" id="row">
+
+    <!-- Card 1 -->
+    <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/project1.png" alt="Gagan Surya">
+      </div>
+
+      <h3 class="project-title">GAGAN SURYA</h3>
+
+      <p class="project-subtitle">2 BHK Row Bunglows</p>
+      <p class="project-subtitle">Comfort Homes</p>
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+        Plot No.7, Ekta Nagar, Near<br>
+        New Grace Academy, At Peth<br>
+        Road, Ekta Nagar Makhmalabad,<br>
+        Nashik - 04
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/project2.png" alt="Silver Drizzle">
+      </div>
+
+      <h3 class="project-title">Silver Drizzle</h3>
+
+      <p class="project-subtitle">2 / 3 BHK Row Bunglows</p>
+      <p class="project-subtitle">Luxurious Row House</p>
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+        Plot No.32, Dhruv Nagar, Near<br>
+        Cricket Academy, At Pipeline<br>
+        Road, Dhruv Nagar, <br>
+        Nashik - 02
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/project3.jpeg" alt="M&M Vishwa">
+      </div>
+
+      <h3 class="project-title">M&amp;M Vishwa</h3>
+
+      <p class="project-subtitle">2 / 3 BHK Row Bunglows</p>
+      <p class="project-subtitle">Comfort Homes</p>
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+        Plot No.7, Ekta Nagar, Near<br>
+        New Grace Academy, At Peth<br>
+        Road, Ekta Nagar Makhmalabad,<br>
+        Nashik - 04
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+
+  </div>
+
+  <!-- ================= Flats (ADD YOUR NEXT 3 CARDS HERE) ================= -->
+  <div class="project-cards tab-content" id="flats">
+    <!-- Card 1 -->
+    <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/Flats/flat1.jpeg" alt=" Vivanta Galaxy ">
+      </div>
+
+      <h3 class="project-title"> Vivanta Galaxy </h3>
+
+      <p class="project-subtitle">2 BHK Flats</p>
+      <p class="project-subtitle">Comfort Homes</p>
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+        Near Jehan Circle,<br>
+        Nashik  
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+     <!-- Card 2 -->
+    <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/Flats/flat2.jpeg" alt="Bhoomi Apartment ">
+      </div>
+
+      <h3 class="project-title">Bhoomi Apartment </h3>
+
+      <p class="project-subtitle">3 BHK Flats</p> 
+      <p class="project-subtitle">Comfort Homes</p>
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+        Near Matori Road,<br>
+        Nashik
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+     <!-- Card 3 -->
+    <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/Flats/flat3.jpeg" alt="Om Galaxy  ">
+      </div>
+
+      <h3 class="project-title">Om Galaxy </h3>
+
+      <p class="project-subtitle">3 BHK Flats</p> 
+      <p class="project-subtitle">Comfort Homes</p>
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+        Near Amrutdham,<br>
+        Nashik
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+  </div>
+
+  <!-- ================= Plots (ADD YOUR NEXT 3 CARDS HERE) ================= -->
+  <div class="project-cards tab-content" id="plots">
+      <!--card 1-->
+   <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/Plots/Plot1.jpg.jpeg" alt="Makhmalabad Shiwar">
+      </div>
+
+      <h3 class="project-title">Makhmalabad Shiwar</h3>
+
+      <p class="project-subtitle">PLOT</p>
+
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+
+       Gate No. 347, Makhmalabad Shiwar,<br>
+      Near Peth Road,<br>
+      Nashik – 422004
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+       <!--card 2-->
+   <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/Plots/Plots2.jpg.jpeg" alt="Adgaon Shiwar">
+      </div>
+
+      <h3 class="project-title">Adgaon<br>
+         Shiwar</h3>
+
+      <p class="project-subtitle">PLOT</p>
+
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+
+      Gate No. 128, Adgaon Shiwar,<br>
+      Near Nashik–Peth Highway,<br>
+      Nashik – 422003
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+        <!--card 3-->
+   <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/Plots/Plots3.jpg.jpeg" alt="Trimbak Road">
+      </div>
+
+      <h3 class="project-title">Trimbak Road<br>
+         Shiwar</h3>
+
+      <p class="project-subtitle">PLOT</p>
+
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+
+     Gat No. 56, Trimbak Road,<br>
+Near ABB Circle,<br>
+Nashik – 422005
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+    
+  </div>
+
+  <!-- ================= Shops (ADD YOUR NEXT 3 CARDS HERE) ================= -->
+  <div class="project-cards tab-content" id="shops">
+     <!--card 1-->
+   <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/shops/shop1.jpg.jpeg" alt="Prime Commercial Hub">
+      </div>
+
+      <h3 class="project-title">Prime Commercial Hub</h3>
+
+      <p class="project-subtitle">Commercial Shops</p>
+
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+
+       Plot No. 12, Peth Phata,<br>
+       Near Nashik–Peth Highway,<br>
+      Nashik – 422003 
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+    <!--card 2-->
+      <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/shops/shop2.jpg.jpeg" alt="Godavari Trade Complex,">
+      </div>
+
+      <h3 class="project-title">Godavari Trade Complex,</h3>
+
+      <p class="project-subtitle">Commercial Shops</p>
+
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+       Plot No. 45, <br>
+        Trimbak Road Near, ABB Circle,<br>
+      Nashik – 422005 
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+    <!--card 3-->
+      <div class="project-card">
+      <div class="project-img-box">
+        <img src="images/shops/shops3.jpg.jpeg" alt="Urban Trade Center">
+      </div>
+
+      <h3 class="project-title">Urban Trade Center</h3>
+
+      <p class="project-subtitle">Commercial Shops</p>
+
+
+      <h4 class="project-address-title">ADDRESS</h4>
+
+      <p class="project-address-text">
+       Plot No. 8, Panchavati,<br>
+        TNear Sita Gufa Road,<br>
+Nashik – 422003
+      </p>
+
+      <button class="project-btn">View Details</button>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+    <div class="stat">
+        <h3>25+</h3>
+        <p>Year of Legacy</p>
+    </div>
+    <div class="stat">
+        <h3>5500+</h3>
+        <p>Dreams Delivered</p>
+    </div>
+    <div class="stat">
+        <h3>5M+</h3>
+        <p>Sq. Ft Delivered</p>
+    </div>
+    <div class="stat">
+        <h3>31+</h3>
+        <p>Prestigious Projects</p>
+    </div>
+    <div class="stat">
+        <h3>60+</h3>
+        <p>Awards</p>
+    </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section class="team">
+    <div class="member">Member 1</div>
+    <div class="member">Member 2</div>
+    <div class="member">Member 3</div>
+    <div class="member">Member 4</div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section class="achievements-section">
+  <h2 class="achievements-title">Achievements</h2>
+
+  <div class="achievements-row">
+
+    <div class="achievement-item">
+      <div class="achievement-circle">
+        ⭐
+      </div>
+      <p class="achievement-text">Award 1<br>details</p>
+    </div>
+
+    <div class="achievement-item">
+      <div class="achievement-circle">
+        🏅
+      </div>
+      <p class="achievement-text">Award 2<br>details</p>
+    </div>
+
+    <div class="achievement-item">
+      <div class="achievement-circle">
+        ⭐
+      </div>
+      <p class="achievement-text">Award 3<br>details</p>
+    </div>
+
+    <div class="achievement-item">
+      <div class="achievement-circle">
+        🛡️
+      </div>
+      <p class="achievement-text">Award 4<br>details</p>
+    </div>
+
+    <div class="achievement-item">
+      <div class="achievement-circle">
+        📄
+      </div>
+      <p class="achievement-text">Award 5<br>details</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT CTA ================= -->
+<section class="contact-banner">
+   <a href="contact.html" class="contact-btn">Contact Us</a>
+</section>
+
+<!-- ================= ABOUT PREVIEW ================= -->
+<section class="about-section">
+  <div class="about-container">
+
+    <!-- Left Image -->
+    <div class="about-img">
+      <img src="images/about.jpg" alt="About Urban">
+    </div>
+
+    <!-- Right Content -->
+    <div class="about-content">
+      <h2>Elevating everyday living</h2>
+
+      <p>
+        We craft a tapestry of experiences designed to enrich your life and
+        elevate your every day, where every moment is a testament to the art of living.
+      </p>
+
+      <a href="projectdetails.html" class="about-btn">Know More</a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo -->
+    <div class="footer-col footer-logo">
+      <img src="images/logo.png" alt="Urban Logo">
+    </div>
+
+    <!-- Sitemap -->
+    <div class="footer-col">
+      <h4>SITEMAP</h4>
+      <a href="#">Home</a>
+      <a href="#">Abouts</a>
+      <a href="#">Projects</a>
+      <a href="#">Achievements</a>
+      <a href="#">Contact</a>
+    </div>
+
+<!-- Socials -->
+<div class="footer-col footer-socials">
+  <h4>SOCIALS</h4>
+
+  <a href="#">
+    Facebook <span class="social-circle"><i class="fa-brands fa-facebook-f"></i></span>
+  </a>
+
+  <a href="#">
+    Linkedin <span class="social-circle"><i class="fa-brands fa-linkedin-in"></i></span>
+  </a>
+
+  <a href="#">
+    Instagram <span class="social-circle"><i class="fa-brands fa-instagram"></i></span>
+  </a>
+
+  <a href="#">
+    Twitter <span class="social-circle"><i class="fa-brands fa-twitter"></i></span>
+  </a>
+</div>
+
+
+    <!-- Head Office + Newsletter -->
+    <div class="footer-col footer-office">
+      <h4>HEAD OFFICE</h4>
+      <p>
+        Xilliams Corner Wine © 2017.1112 A Market St<br>
+        # Stree B22, Charlottesville, CA 45565
+      </p>
+
+      <h4 class="newsletter-title">NEWS LETTER</h4>
+      <input type="email" placeholder="Enter your email address" class="footer-input">
+
+      <div class="footer-social-icons">
+        <span>Social Media</span>
+        <div class="icons">
+  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa-solid fa-rss"></i></a>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom row -->
+  <div class="footer-bottom">
+    <p class="footer-email">contact@lift.agency</p>
+    <p class="footer-phone">(123) 456-7890</p>
+    <p class="footer-copy">© 2020 Lift Media. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

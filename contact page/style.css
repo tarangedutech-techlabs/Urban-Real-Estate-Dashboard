@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 55px;     /* increase size here */
+    height: auto;
+}
+
+.logo-text h3 {
+    color: #f4b400;
+    margin-bottom: 2px;
+}
+
+.logo-text small {
+    font-size: 10px;
+    color: #777;
+}
+
+
+/* Contact */
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Main Box */
+.contact-box {
+    position: relative;
+    width: 900px;
+    margin: auto;
+    height: 420px;
+}
+
+/* Left Panel */
+.left-panel {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 420px;
+    height: 300px;
+    background: #58bdb7;
+    border-radius: 20px;
+    padding: 60px 40px;
+    color: white;
+    text-align: left;
+}
+
+.left-panel p {
+    margin-bottom: 20px;
+}
+
+/* Right Form */
+.form-panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 360px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.15);
+}
+
+.form-panel input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-box {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.radio-box label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    background: #2c8c8a;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 140px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    border-top: 1px solid #ccc;
+    margin-top: 60px;
+}
+
+.social span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #eee;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 8px;
+}

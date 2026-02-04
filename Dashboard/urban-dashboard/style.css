@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #1f2937;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar li:hover,
+.sidebar .active {
+  background: #374151;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* ROLE SWITCH */
+.role-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.role-switch select {
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card span {
+  font-size: 28px;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* BOX SECTIONS */
+.box {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #f1f5f9;
+}
+
+/* PROJECT STATUS */
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.project {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.progress {
+  background: #e5e7eb;
+  height: 8px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.progress span {
+  display: block;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 8px;
+}
+
+/* CRM */
+.crm-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tag-hot {
+  color: red;
+  font-weight: bold;
+}
+
+.tag-warm {
+  color: orange;
+  font-weight: bold;
+}
+
+.tag-cold {
+  color: blue;
+  font-weight: bold;
+}
+
+.assign-btn {
+  padding: 4px 8px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ANALYTICS */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.chart-box {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* INVENTORY */
+.inventory-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.inv-card {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.inventory-table button {
+  padding: 6px 10px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* INQUIRY FORM */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+#leadForm input,
+#leadForm select,
+#leadForm textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#leadForm textarea {
+  margin-top: 10px;
+  width: 100%;
+  min-height: 80px;
+}
+
+#leadForm button {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ⭐ REVIEWS & TRUST (STEP 7) */
+.rating-box {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.stars {
+  font-size: 24px;
+  color: #f59e0b;
+}
+
+.review-btn {
+  padding: 6px 10px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.logout-btn {
+  padding: 6px 12px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* ===== Charts Fix ===== */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.chart-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  height: 320px;          /* 🔥 IMPORTANT */
+}
+
+
+.chart-box canvas {
+  width: 100% !important;
+  height: 260px !important;   /* 🔥 IMPORTANT */
+}
+
+
+/* ===== Inventory Table ===== */
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.edit-btn {
+  background: #22c55e;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== Lead Form ===== */
+.lead-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.lead-form textarea {
+  grid-column: span 3;
+  height: 90px;
+}
+
+.primary-btn {
+  width: 140px;          /* 🔥 same as OLD */
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chart-box {
+  height: 350px;
+}
+
+.chart-box canvas {
+  width: 100% !important;
+  height: 280px !important;
+}
+

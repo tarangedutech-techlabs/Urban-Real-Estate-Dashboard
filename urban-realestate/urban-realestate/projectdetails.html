@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="project-details-page">
+
+  <div class="container">
+
+    <!-- Header -->
+    <header class="details-header">
+
+      <!-- Logo -->
+      <div class="details-logo">
+        <img src="images/logo.png" alt="Urban Logo">
+      </div>
+
+      <!-- Right Side -->
+      <div class="details-right">
+        <a href="index.html" class="home-link">Home</a>
+        <a href="contact.html" class="details-link">Contact Us</a>
+
+        <!-- Search Button -->
+        <button class="details-search-btn" id="openSearch" type="button" aria-label="Search">
+          <svg class="details-search-icon" viewBox="0 0 24 24" fill="none">
+            <circle cx="11" cy="11" r="7" stroke="black" stroke-width="2"></circle>
+            <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="black" stroke-width="2" stroke-linecap="round"></line>
+          </svg>
+        </button>
+      </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="details-hero">
+        <div class="slider">
+
+    <!-- Slides -->
+    <div class="slides">
+      <img src="images/about.jpg" class="slide active" alt="1">
+      <img src="images/Plots/Plot1.jpg.jpeg" class="slide" alt="2">
+      <img src="images/Plots/Plots2.jpg.jpeg" class="slide" alt="3">
+    </div>
+
+    <!-- Buttons 
+  <button class="slider-btn prev" id="prevBtn">❮</button>
+<button class="slider-btn next" id="nextBtn">❯</button>-->
+
+
+    <!-- Dots -->
+    <div class="dots" id="dots"></div>
+
+  </div>
+     <!-- <img src="images/about.jpg" alt="Project Image">-->
+    </section>
+
+    <!-- Tabs -->
+    <section class="details-tabs">
+      <button class="details-tab-btn active" onclick="changeTab('description', this)">DESCRIPTION</button>
+      <button class="details-tab-btn" onclick="changeTab('location', this)">LOCATION</button>
+      <button class="details-tab-btn" onclick="changeTab('amenities', this)">AMENITIES</button>
+      <button class="details-tab-btn" onclick="changeTab('layout', this)">LAYOUT PLANS</button>
+    </section>
+
+    <!-- Content -->
+    <section class="details-content">
+      <h2>PROJECT DETAILS</h2>
+
+    <pre id="tabContent" class="details-text">
+N.A bungalow plots in makhmalabad shiwar in nashik municipality available at very cheap rates
+Residential N.A. bungalow plot available near meghraj bakery, Nashik-Peth Highway, Scenic Environment
+N.A.Plot onwards from Rs.13.51 Lakhs
+Plots available from 657 sq.ft. to 3000 sq.ft.
+Makhamalabad Gat no-347
+Road rate for 9mtr- 18,500 Per War
+Road rate for 18mtr- 21,000 Per War
+
+Residential Plot
+Min. Plot Area 657 sq.ft.
+Cost= 13,51,000
+Max. Plot Area 2028 sq.ft.
+Cost = 37,51,000
+
+Commercial Plot
+Min. Plot Area 2786 sq.ft.
+Cost= 65,00,000
+Max. Plot Area 5249 sq.ft.
+Cost = 1,22,47,000
+</pre>
+
+    </section>
+
+    <!-- Buttons -->
+    <section class="details-buttons">
+      <button class="details-btn">📍 Location</button>
+      <button class="details-btn">⬇ Brochure Download</button>
+    </section>
+
+    <section class="details-buttons">
+      <button class="details-btn call-btn">📞 Call Us Now</button>
+    </section>
+
+  </div>
+
+  <!-- JS File -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

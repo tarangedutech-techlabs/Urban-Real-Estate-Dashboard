@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Urban Real Estate Dashboard</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">URBAN</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Projects</li>
+      <li>Sales</li>
+      <li>Inventory</li>
+      <li>Leads</li>
+      <li>Reviews</li>
+      <li>Settings</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <h1>Urban Real Estate Dashboard</h1>
+
+      <div class="role-switch">
+        <label>Role:</label>
+        <select id="roleSelect">
+          <option value="admin">Admin</option>
+          <option value="manager">Sales Manager</option>
+          <option value="agent">Agent</option>
+        </select>
+
+        <button onclick="logout()" class="logout-btn">Logout</button>
+      </div>
+    </header>
+
+    <!-- OVERVIEW CARDS -->
+    <section class="cards role-cards">
+      <div class="card"><span>🏢</span><h3>Total Projects</h3><p>24</p></div>
+      <div class="card"><span>🏠</span><h3>Total Properties</h3><p>1,180</p></div>
+      <div class="card"><span>💰</span><h3>Monthly Revenue</h3><p>₹3.2 Cr</p></div>
+      <div class="card"><span>📩</span><h3>New Inquiries</h3><p>186</p></div>
+      <div class="card"><span>📈</span><h3>Sales Growth</h3><p>+18%</p></div>
+    </section>
+
+    <!-- PROJECTS BY LOCATION -->
+    <section class="box role-projects">
+      <h2>Projects by Location (Nashik)</h2>
+      <table>
+        <tr>
+          <th>Location</th>
+          <th>Active Projects</th>
+          <th>Sold / Available</th>
+          <th>Avg ₹ / sq.ft</th>
+        </tr>
+        <tr><td>Gangapur Road</td><td>5</td><td>210 / 300</td><td>₹4,800</td></tr>
+        <tr><td>Indira Nagar</td><td>4</td><td>180 / 250</td><td>₹4,200</td></tr>
+        <tr><td>College Road</td><td>3</td><td>140 / 180</td><td>₹5,000</td></tr>
+        <tr><td>Trimbak Road</td><td>2</td><td>90 / 150</td><td>₹3,800</td></tr>
+        <tr><td>Dwarka</td><td>3</td><td>160 / 220</td><td>₹4,000</td></tr>
+      </table>
+    </section>
+
+    <!-- PROJECT STATUS -->
+    <section class="box role-status">
+      <h2>Project Status Tracker</h2>
+
+      <div class="status-grid">
+        <div class="project">
+          <h4>Green Heights</h4>
+          <p>Builder: Urban Group</p>
+          <div class="progress"><span style="width:100%"></span></div>
+          <small>Completed</small>
+        </div>
+
+        <div class="project">
+          <h4>Urban Nest</h4>
+          <p>Builder: Urban Group</p>
+          <div class="progress"><span style="width:65%"></span></div>
+          <small>Ongoing – Dec 2026</small>
+        </div>
+
+        <div class="project">
+          <h4>Skyline Plaza</h4>
+          <p>Builder: Urban Group</p>
+          <div class="progress"><span style="width:20%"></span></div>
+          <small>Upcoming – 2027</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANALYTICS -->
+    <section class="box role-analytics">
+      <h2>Sales & Revenue Analytics</h2>
+
+      <div class="charts-grid">
+        <div class="chart-box">
+          <h4>Monthly Sales</h4>
+          <canvas id="salesChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+          <h4>Revenue Trend (₹ Cr)</h4>
+          <canvas id="revenueChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+          <h4>Property Type Sales</h4>
+          <canvas id="propertyChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVENTORY -->
+    <section class="box role-inventory">
+      <h2>Inventory Management</h2>
+
+      <div class="inventory-cards">
+        <div class="inv-card"><h4>Available Units</h4><p>420</p></div>
+        <div class="inv-card"><h4>Booked Units</h4><p>610</p></div>
+        <div class="inv-card"><h4>Blocked Units</h4><p>150</p></div>
+        <div class="inv-card"><h4>Avg Price / sq.ft</h4><p>₹4,500</p></div>
+      </div>
+      <h3>Floor-wise Availability</h3>
+<table class="inventory-table">
+  <tr>
+    <th>Floor</th>
+    <th>Available</th>
+    <th>Booked</th>
+    <th>Blocked</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>1st Floor</td><td>12</td><td>20</td><td>3</td>
+    <td><button class="edit-btn">Edit</button></td>
+  </tr>
+  <tr>
+    <td>2nd Floor</td><td>15</td><td>18</td><td>2</td>
+    <td><button class="edit-btn">Edit</button></td>
+  </tr>
+</table>
+
+    </section>
+
+    <!-- INQUIRY -->
+    <!-- INQUIRY -->
+<section class="box role-inquiry">
+  <h2>New Inquiry / Lead</h2>
+
+  <form class="lead-form">
+    <input type="text" placeholder="Customer Name">
+    <input type="text" placeholder="Phone Number">
+    <input type="email" placeholder="Email">
+
+    <select>
+      <option>Property Type</option>
+      <option>1 BHK</option>
+      <option>2 BHK</option>
+      <option>Plot</option>
+      <option>Commercial</option>
+    </select>
+
+    <select>
+      <option>Budget Range</option>
+      <option>Below 30 L</option>
+      <option>30–70 L</option>
+      <option>Above 70 L</option>
+    </select>
+
+    <select>
+      <option>Preferred Location</option>
+      <option>Gangapur Road</option>
+      <option>Indira Nagar</option>
+      <option>College Road</option>
+    </select>
+
+    <textarea placeholder="Message"></textarea>
+
+    <button type="submit" class="primary-btn">Add Lead</button>
+  </form>
+</section>
+  </main>
+</div>
+
+<!-- MAIN JS -->
+<script src="script.js"></script>
+
+<!-- ANALYTICS JS -->
+<script src="analytics.js"></script>
+
+</body>
+</html>
